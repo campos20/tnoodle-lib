@@ -2,12 +2,12 @@ package org.worldcubeassociation.tnoodle.svglite;
 
 public class Circle extends Ellipse {
 
-    public Circle(double cx, double cy, double r) {
-        super(cx, cy, r, r);
-    }
+	public Circle(double cx, double cy, double r) {
+		super(cx, cy, r, r);
+	}
 
-    public Circle(Circle c) {
-        super(c);
-    }
+	public Circle(Circle c) {
+		super(c);
+	}
 
 }
