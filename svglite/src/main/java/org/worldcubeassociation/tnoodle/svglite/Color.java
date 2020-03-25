@@ -1,5 +1,7 @@
 package org.worldcubeassociation.tnoodle.svglite;
 
+import org.worldcubeassociation.tnoodle.svglite.exception.InvalidHexColorException;
+
 import lombok.Getter;
 
 public class Color {

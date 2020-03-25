@@ -2,8 +2,8 @@ package org.worldcubeassociation.tnoodle.scrambles;
 
 import org.worldcubeassociation.tnoodle.svglite.Color;
 import org.worldcubeassociation.tnoodle.svglite.Dimension;
-import org.worldcubeassociation.tnoodle.svglite.InvalidHexColorException;
 import org.worldcubeassociation.tnoodle.svglite.Svg;
+import org.worldcubeassociation.tnoodle.svglite.exception.InvalidHexColorException;
 import org.worldcubeassociation.tnoodle.svglite.Group;
 import org.worldcubeassociation.tnoodle.svglite.Element;
 import java.security.NoSuchAlgorithmException;

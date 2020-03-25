@@ -1,4 +1,4 @@
-package org.worldcubeassociation.tnoodle.svglite;
+package org.worldcubeassociation.tnoodle.svglite.exception;
 
 @SuppressWarnings("serial")
 public class InvalidHexColorException extends Exception {
