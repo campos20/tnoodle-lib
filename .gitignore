@@ -21,3 +21,6 @@ tnoodle_pruning_cache/
 **/logging/*.log
 version.tnoodle
 gradle.properties
+
+*.project
+*.classpath
