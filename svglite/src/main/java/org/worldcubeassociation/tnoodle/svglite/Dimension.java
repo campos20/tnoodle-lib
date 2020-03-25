@@ -1,26 +1,12 @@
 package org.worldcubeassociation.tnoodle.svglite;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class Dimension {
 
-    public int width, height;
-    public Dimension(int width, int height) {
-        this.width = width;
-        this.height = height;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public String toString() {
-        return "<" + Dimension.class.getName() +
-               " width=" + width +
-               " height=" + height +
-               ">";
-    }
-
+	private int width;
+	private int height;
 }

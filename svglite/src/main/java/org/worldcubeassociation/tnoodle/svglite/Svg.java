@@ -2,26 +2,27 @@ package org.worldcubeassociation.tnoodle.svglite;
 
 public class Svg extends Element {
 
-    private double originOffsetX, originOffsetY;
-    public Svg(Dimension size) {
-        super("svg");
-        setSize(size);
-        setAttribute("version", "1.1");
-        setAttribute("xmlns", "http://www.w3.org/2000/svg");
-        originOffsetX = 0;
-        originOffsetY = 0;
-    }
+	private static final String WIDTH = "width";
+	private static final String HEIGHT = "height";
+	private static final String PX = "px";
 
-    public void setSize(Dimension size) {
-        setAttribute("width", "" + size.width + "px");
-        setAttribute("height", "" + size.height + "px");
-        setAttribute("viewBox", "0 0 " + size.width + " " + size.height);
-    }
+	public Svg(Dimension size) {
+		super("svg");
+		setSize(size);
+		setAttribute("version", "1.1");
+		setAttribute("xmlns", "http://www.w3.org/2000/svg");
+	}
 
-    public Dimension getSize() {
-        int width = Integer.parseInt(getAttribute("width").replace("px", ""));
-        int height = Integer.parseInt(getAttribute("height").replace("px", ""));
-        return new Dimension(width, height);
-    }
+	public void setSize(Dimension size) {
+		setAttribute(WIDTH, "" + size.getWidth() + PX);
+		setAttribute(HEIGHT, "" + size.getHeight() + PX);
+		setAttribute("viewBox", "0 0 " + size.getWidth() + " " + size.getHeight());
+	}
+
+	public Dimension getSize() {
+		int width = Integer.parseInt(getAttribute(WIDTH).replace(PX, ""));
+		int height = Integer.parseInt(getAttribute(HEIGHT).replace(PX, ""));
+		return new Dimension(width, height);
+	}
 
 }
