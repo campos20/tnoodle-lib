@@ -15,6 +15,19 @@ plugins {
     JFROG_BINTRAY
 }
 
+buildscript {
+  repositories {
+    maven {
+      url = uri("https://plugins.gradle.org/m2/")
+    }
+  }
+  dependencies {
+    classpath("io.freefair.gradle:lombok-plugin:5.0.0-rc6")
+  }
+}
+
+apply(plugin = "io.freefair.lombok")
+
 configureJava()
 configureCheckstyle()
 configureMavenPublication("lib-svglite")
